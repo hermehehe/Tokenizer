@@ -1,6 +1,6 @@
 **Description**
 
-This project tackles tokenization (converting input text to tokens) by using hashtables to store these tokens. This program reads input text, breaks it up into words and stores each unique word into a directionary as well a hashtable which keeps track of each word and its corresponding index in the dictionary (its "token"). Tokenizing in this way allows for faster search and retrieval of words without needing to search the entire array in most cases. This is useful as tokenization is commonly used in AI Natural Language Processing tasks. This project was a way for me to apply my knowledge of hashtables and continue practice desiging my own data stucture classes. 
+This project tackles tokenization (converting input text to tokens) by using hashtables to store these tokens. This program reads input text, breaks it up into words and stores each unique word into a directionary as well a hashtable that keeps track of each word and its corresponding index in the dictionary (its "token"). Tokenizing in this way allows for faster search and retrieval of words without needing to search the entire array in most cases. This is useful as tokenization is commonly used in AI Natural Language Processing tasks. This project was a way for me to apply my knowledge of hashtables and continue practice desiging my own data stucture classes. 
 
 Each class as well as its functions are declared in their own .hpp files. All definitions for all classes are in one .cpp file. A main.cpp file handles all user input.
 
