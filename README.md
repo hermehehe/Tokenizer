@@ -17,7 +17,17 @@ Dictionary Class
 -Dictionary is an array of strings. There is a pointer to the array, and integer for the size for the size of the array and an index counter that keeps track of the index of the last word added, increases by 1 (using add_index())every time a word is added to the dictionary
 
 
+COMMANDS 
+In the terminal type the commands in all caps followed by their appropriate parameters:
 
+* M m - creates a 
+* INSERT word -
+* READ filename -
+* TOKENIZE word -
+* RETRIEVE t -
+* STOK string of words -
+* 
 
+This code has been throughly tested for errors and memory leaks using valgrind.
 
 
