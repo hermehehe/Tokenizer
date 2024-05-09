@@ -27,8 +27,8 @@ In the terminal type the commands in all caps followed by their appropriate para
 * *READ* filename - Read words from the file named “filename”, adds words to tokenizer. Output conditions same as INSERT command ^^.
 * *TOKENIZE* word - Return the token (index in the dictionary) associated with this word. If word is found in the hashtable output is its token. Otherwise output 0.
 * *RETRIEVE* t - Retrieves the word with token t (an integer). Outputs the word if token exists other
-* *STOK* string of words -
-* 
+* *STOK* string of words - Tokenize all words in the provided string, the input string should end with "_DONE_" and should not appear elsewhere into the string. Outputs each words' token in order and 0 if the word is not apart of the dictionary. 
+* *TOKS* string of tokens - turns a string of tokens into a string of words. Outputs string of words and UNKOWN for any tokens not associated with a word.
 
 This code has been throughly tested for errors and memory leaks using valgrind.
 
