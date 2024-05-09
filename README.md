@@ -1,2 +1,23 @@
 This project tackles tokenization (converting input text to tokens) by using hashtables to store these tokens. This program reads input text, breaks it up into words and stores each unique word into a directionary as well a hashtable which keeps track of each word and its corresponding index in the dictionary (it's "token"). Tokenizing in this way allows for faster search and retreval of words without needing to search the entire array in most cases. This is useful as tokenization is commonly used in AI Natural Language Processing tasks. This project was a way for me to apply my knowledge of hashtables and continue practice desiging my own data stucture classes. 
 
+![image](https://github.com/hermehehe/Tokenizer/assets/166939272/c3382994-c54c-4f49-a100-bee8ccb0e6e0)
+Important Classes 
+
+Tokenizer Class
+
+-Created a tokenizer class to easily access, search through and sync, the dictionary and the hashtable in the same functions, which is why the constructor creates a hashtable and dictionary pointers, then deletes them in the destructor
+
+Hashtable Class
+
+-Constructor creates a an array of linked lists which is the data structure of our hashtable
+-Also have a hashArraySize integer to remember the size of the hashtable (taken in from user input) to use in calculations like k mod m
+
+Dictionary Class
+
+-Dictionary is an array of strings. There is a pointer to the array, and integer for the size for the size of the array and an index counter that keeps track of the index of the last word added, increases by 1 (using add_index())every time a word is added to the dictionary
+
+
+
+
+
+
