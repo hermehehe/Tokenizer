@@ -37,12 +37,12 @@ void Item::set_next(Item *next)
     p_next = next;
 }
 //////////*************LinkedList Definitons*************//////////////////
-// constructor
+//constructor
 Link::Link()
 {
     p_head = nullptr;
 }
-
+//destructor 
 Link::~Link()
 {
     Item *current = p_head;
@@ -55,7 +55,7 @@ Link::~Link()
     }
     p_head = nullptr;
 }
-// getters and setters
+//getters and setters
 Item *Link::get_head()
 {
     return p_head;
@@ -66,7 +66,7 @@ void Link::set_head(Item *head)
 }
 
 //////////*************Hashtable Definitons*************//////////////////
-// Constructor//
+// Constructor
 Hashtable::Hashtable(int m)
 {
     hashArray = nullptr;
@@ -78,7 +78,7 @@ Hashtable::Hashtable(int m)
     hashArraySize = m;
 }
 
-// Destructor//
+// Destructor
 Hashtable::~Hashtable()
 {
     if (hashArray != nullptr)
@@ -92,7 +92,7 @@ Hashtable::~Hashtable()
     }
 }
 
-// getters
+//getters
 int Hashtable::get_hashArraySize()
 {
     return hashArraySize;
@@ -103,22 +103,21 @@ Link **Hashtable::get_hashArray()
     return hashArray;
 }
 
-// Member functions//
 //////////*************Dictionary Definitons*************//////////////////
 // Constructor//
 Dictionary::Dictionary(int m)
 {
     index = 0;
     size = m;
-    words = new std::string[size]; // define this here or in class def???
+    words = new std::string[size]; 
 }
-// Destructor//
+//Destructor
 Dictionary::~Dictionary()
 {
     delete[] words;
     words = nullptr;
 }
-// setters and getters definitions
+//setters and getters
 std::string *Dictionary::get_array()
 {
     return words;
@@ -182,7 +181,7 @@ Tokenizer::Tokenizer(int m)
     dict = new Dictionary(m);
     hash = new Hashtable(m);
 }
-
+//Destructor
 Tokenizer::~Tokenizer()
 {
 
@@ -198,7 +197,7 @@ Tokenizer::~Tokenizer()
     }
 }
 
-// member functions
+//Member functions
 
 int Tokenizer::computeKey(const std::string &input_word)
 { // computs key value
@@ -211,6 +210,7 @@ int Tokenizer::computeKey(const std::string &input_word)
 
     return asciiValue;
 }
+
 std::string Tokenizer::retrieve(int tok)
 {
     std::string *wordArray = dict->get_array();
@@ -229,6 +229,7 @@ std::string Tokenizer::retrieve(int tok)
         return wordArray[tok - 1];
     }
 }
+
 int Tokenizer::tokenize(std::string input_word)
 {
     int m = hash->get_hashArraySize();
@@ -260,6 +261,7 @@ int Tokenizer::tokenize(std::string input_word)
 
     return 0;
 }
+
 bool Tokenizer::insert(const std::string &input_word)
 {
     // cheching for valid string
@@ -314,8 +316,8 @@ bool Tokenizer::insert(const std::string &input_word)
     }
 }
 
-bool Tokenizer::tokenizeFile(std::fstream &fin) // test this
-{                                               // from parsing_input_files video on LEARN
+bool Tokenizer::tokenizeFile(std::fstream &fin) 
+{                                               
     std::string toRead;
     char current_char;
     bool valid_string;
