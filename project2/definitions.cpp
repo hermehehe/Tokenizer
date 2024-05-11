@@ -264,7 +264,7 @@ int Tokenizer::tokenize(std::string input_word)
 
 bool Tokenizer::insert(const std::string &input_word)
 {
-    // cheching for valid string
+    // checking for valid string
     for (int i = 0; i < input_word.length(); i++)
     { // check all chars of 1 string
         if (!isalpha(input_word.at(i)))
