@@ -26,7 +26,7 @@ Each class, as well as its functions are declared in their own .hpp files. All d
 
 *COMMANDS* 
 
-In the terminal type the commands in all caps followed by their appropriate parameters:
+Inside the terminal, type the commands in all caps followed by their appropriate parameters:
 
 * *M* m - creates a new hash table with size of integer m. Outputs "success".
 * *INSERT* word - inserts a word into the tokenizer updating the dictionary and hashtable. Outputs "success" if word doesn't already exist in dictionary and doesn't use non-alphabetical characters, otherwise outputs "failure".
@@ -37,7 +37,7 @@ In the terminal type the commands in all caps followed by their appropriate para
 * *TOKS* string of tokens - turns a string of tokens into a string of words. Outputs string of words and UNKOWN for any tokens not associated with a word.
 
 
-This code has been throughly tested for errors and memory leaks using valgrind.
+This code has been throughly tested for errors and memory leaks using Valgrind.
 
 
 
