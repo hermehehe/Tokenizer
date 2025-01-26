@@ -21,7 +21,7 @@ Each class, as well as its functions are declared in their own .hpp files. All d
 
 **Dictionary Class**
 
-- Dictionary is an array of strings. There is a pointer to the array, and integer for the size for the size of the array and an index counter that keeps track of the index of the last word added, increases by 1 (using add_index())every time a word is added to the dictionary
+- Dictionary is an array of strings. There is a pointer to the array, an integer for the size of the array and an index counter that keeps track of the index of the last word added, increases by 1 (using add_index())every time a word is added to the dictionary
 
 
 *COMMANDS* 
