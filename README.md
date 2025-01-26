@@ -16,7 +16,7 @@ Each class, as well as its functions are declared in their own .hpp files. All d
 
 **Hashtable Class**
 
-- Constructor creates a an array of linked lists which is the data structure of our hashtable
+- Constructor creates an array of linked lists which is the data structure of our hashtable
 - Also have a hashArraySize integer to remember the size of the hashtable (taken in from user input) to use in calculations like k mod m
 
 **Dictionary Class**
